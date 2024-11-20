@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 20px;
+            grid-template-rows: repeat(10, 1fr);
+            height: 100%;
+            /* grid-auto-flow: dense; */
+        }
+        #post{
+            grid-column: 1/span 3;
+            grid-row: 1 /span 3;
+        }
+        #top{
+            grid-column: auto / span 6;
+            grid-row: auto / span 2;
+        }
+        #audience{
+            grid-column: 10/ span 3;
+            grid-row: 1 /span 4;
+        }
+        #aiContent{
+            grid-column:1/ span 3;
+            grid-row: 4 /span 3;
+        }
+        #accounts{
+            grid-column: 4 / span 3;
+            grid-row: auto / span 2;
+        }
+        #posting{
+            grid-column: span 3;
+            grid-row: auto / span 2;
+        }
+        #social{
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+        #followers{
+            grid-column: 7 /span 6;
+            grid-row: span 2;
+        }
+        /* @media (max-width:430px) {
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+            
+        } */
+
+    </style>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body class="container">
+    
+    <div id="top">Top social</div>
+    <div id="accounts">Acounts</div>
+    <div id="posting">posting</div>
+    <div id="social">Social</div>
+    <div id="followers">Followes</div>
+    <div id="audience">Audience</div>
+    <div id="post">Post</div>
+    <div id="aiContent">Ai</div>
+</body>
+</html>

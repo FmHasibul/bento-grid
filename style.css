@@ -1,0 +1,139 @@
+main{
+    margin: 2rem;
+    display: grid;
+    grid-gap: 20px;
+    /* border: 2px black solid; */
+}
+#top{
+    
+    padding: 10px 2rem;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: #7650dc;
+    color: #ffff;
+    text-align: center;
+}
+ img{
+    width: 90%;
+    height: auto;
+}
+#accounts{
+    background-color: hsl(31, 66%, 93%);
+    border-radius: 20px;
+    padding: 2rem;
+}
+#posting{
+    background-color: hsl(39, 100%, 71%);
+    border-radius: 20px;
+    padding: 2rem;
+}
+#social{
+    background-color: hsl(254, 88%, 90%);
+    border-radius:20px ;
+    padding: 2rem;
+    text-align: center;
+}
+
+#followers{
+    background-color: #7650dc;
+    color: #ffff;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+}
+#audience{
+    background-color:hsl(31, 66%, 93%);
+    border-radius: 20px;
+    padding: 2rem;
+}
+#post{
+    background-color: hsla(37, 54%, 85%, 0.971);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+}
+#aiContent{
+ background-color: hsl(39, 100%, 71%);
+ border-radius: 20px;
+ padding: 2rem;
+
+}
+@media (min-width:430px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 20px;
+        grid-template-rows: repeat(10, 1fr);
+        height: 100%;
+        /* grid-auto-flow: dense; */
+    }
+    img{
+      object-fit: cover;
+    }
+    #post{
+        grid-column: 1/span 3;
+        grid-row: 1 /span 3;
+        padding-top: 50% ;
+    }
+    #top{
+        grid-column: auto / span 6;
+        grid-row: auto / span 2;
+    }
+    #social{
+        grid-column: 10/ span 3;
+        grid-row: 1 /span 4;
+        padding-right: 0;
+        text-align: start;
+    }
+    #social img{
+        height: 80%;
+        width: 100%;
+        object-fit:fill;
+    }
+    #aiContent{
+        grid-column:1/ span 3;
+        grid-row: 4 /span 3;
+        font-size: larger;
+    }
+    #aiContent img{
+
+        height: 65%;
+        width: 100%;
+        object-fit: fill;
+        padding-top: 10%;
+
+    }
+    #accounts{
+        grid-column: 4 / span 3;
+        grid-row: auto / span 2;
+    }
+    #posting{
+        grid-column: span 3;
+        grid-row: auto / span 2;
+        padding-bottom:2px ;
+    }
+    #posting img{
+        width: 100%;
+        /* height: 80%; */
+        object-fit: fill;
+    }
+    
+    #audience{
+        grid-column: span 3;
+        grid-row: 5/ span 2;
+        font-size: 30px;
+    }
+    #followers{
+        grid-column: 7 /span 6;
+        grid-row: span 2;
+        display: flex;
+        text-align: start;
+        font-size: larger;
+        /* padding-top: 10%; */
+    }
+    #followers h1{
+        padding-top: 5%;
+
+    }
+    
+}
